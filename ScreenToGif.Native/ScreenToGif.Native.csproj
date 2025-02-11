@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UseWPF>True</UseWPF>
-    <UseWindowsForms>True</UseWindowsForms>
+    <UseWPF>False</UseWPF>
+    <UseWindowsForms>False</UseWindowsForms>
     <DebugType>embedded</DebugType>
     <Platforms>AnyCPU;ARM64;x64;x86</Platforms>
     <Version>2.41.2</Version>

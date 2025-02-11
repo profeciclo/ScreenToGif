@@ -22,7 +22,7 @@
     <UseWindowsForms>false</UseWindowsForms>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-    <Platforms>AnyCPU;ARM64;x64;x86</Platforms>
+    <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>ScreenToGif.App</StartupObject>
@@ -119,6 +119,7 @@
     <Compile Remove="Util\Commands.cs" />
     <Page Remove="Themes\Old.xaml" />
   </ItemGroup>
+  <!--
   <Target Name="AfterBuild">
     <PropertyGroup>
       <TargetUWP>..\ScreenToGif.UWP\win32\</TargetUWP>
@@ -127,7 +128,7 @@
       <Win32Binaries Include="$(TargetDir)\*" />
     </ItemGroup>
     <Copy SourceFiles="@(Win32Binaries)" DestinationFolder="$(TargetUWP)" />
-  </Target>
+  </Target>-->
   <PropertyGroup>
     <PostBuildEvent>
       if exist "$(DevEnvDir)..\..\VC\Auxiliary\Build\vsvars32.bat" (
